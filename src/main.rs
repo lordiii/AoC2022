@@ -2,6 +2,7 @@ extern crate core;
 
 mod day_01;
 mod day_02;
+mod day_03;
 
 use clap::Parser;
 
@@ -25,6 +26,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     match day {
         1 => day_01::main(&puzzle_input),
         2 => day_02::main(&puzzle_input),
+        3 => day_03::main(&puzzle_input),
         _ => println!("Could not find day!")
     }
 
