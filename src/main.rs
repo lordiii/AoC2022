@@ -4,6 +4,7 @@ mod day_03;
 mod day_04;
 mod day_05;
 mod day_06;
+mod day_10;
 
 use clap::Parser;
 
@@ -31,6 +32,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         4 => day_04::main(&puzzle_input),
         5 => day_05::main(&puzzle_input),
         6 => day_06::main(&puzzle_input),
+        10 => day_10::main(&puzzle_input),
         _ => println!("Could not find day!")
     }
 
